@@ -1,0 +1,134 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: url(/images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.username {
+  background: -webkit-gradient(linear, left top, right top, from(#828282), color-stop(#a9a9a9), to(#dad6d6));
+  background: linear-gradient(to right, #828282, #a9a9a9, #dad6d6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 5px;
+  letter-spacing: 0;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.boxes {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+
+.box {
+  background-color: rgba(230, 230, 230, 0.5);
+  margin-top: 15px;
+  text-align: center;
+  padding: 23px;
+  cursor: pointer;
+}
+
+.link {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.37px;
+}
+
+.emoji {
+  font-size: 25px;
+}
+
+.icons {
+  width: 100%;
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-media {
+  width: 40px;
+  padding: 0 20px;
+}
+
+.instagram {
+  width: 36px;
+}
+
+.email {
+  width: 42px;
+}
+
+@media (max-width: 530px) {
+  .link {
+    font-size: 18px;
+  }
+  .emoji {
+    font-size: 21px;
+  }
+  .social-media {
+    width: 30px;
+    padding: 0 20px;
+  }
+  .instagram {
+    width: 26px;
+  }
+  .email {
+    width: 32px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

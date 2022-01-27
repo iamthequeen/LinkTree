@@ -1,0 +1,136 @@
+@mixin background-size($sizing) {
+    -webkit-background-size: $sizing;
+    -moz-background-size: $sizing;
+    -o-background-size: $sizing;
+    background-size: $sizing;
+  }
+  
+  @mixin column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin gradient {
+    background: -webkit-linear-gradient(to right, #828282, #a9a9a9, #dad6d6);
+  background: -moz-linear-gradient(to right, #828282, #a9a9a9, #dad6d6);
+  background: linear-gradient(to right, #828282, #a9a9a9, #dad6d6);
+  }
+  
+  $opaque-primary: rgba(230,230,230, 0.5);
+  $secondary-color: #FFF;
+  $font-stack: 'Inter', sans-serif;
+  $small-measure: 5px;
+  
+  body {
+    font-family: $font-stack;
+    background: url(/images/background.jpg) no-repeat center center fixed; 
+    @include background-size(cover);
+    height: 100vh;
+  }
+  
+  .container {
+    margin: auto;
+    @include column-center();
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .account {
+    @include column-center();
+    margin-top: #{$small-measure * 4};
+  }
+  
+  .username {
+    @include gradient();
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: $small-measure;
+    letter-spacing: 0;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
+  .boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  } 
+  
+  .box {
+    background-color: $opaque-primary;
+    margin-top:  #{$small-measure * 3};
+    text-align: center;
+    padding: 23px;
+    cursor: pointer;
+  }
+  
+  .link {
+    color: $secondary-color;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.37px;
+  }
+  
+  .emoji {
+    font-size: #{$small-measure * 5};
+  } 
+  
+  .icons {
+    width: 100%;
+    margin:  #{$small-measure * 8} 0;
+    @include flex-center();
+  }
+  
+  .social-media {
+    width:  #{$small-measure * 8};
+    padding: 0  #{$small-measure * 4};
+  }
+  
+  .instagram {
+    width: 36px;
+  }
+  
+  .email {
+    width: 42px;
+  }
+
+  @media (max-width: 530px) {
+    .link {
+      font-size: 18px;
+    }
+    
+    .emoji {
+    font-size: 21px;
+  } 
+  
+    .social-media {
+    width: 30px;
+    padding: 0  #{$small-measure * 4};
+  }
+  
+  .instagram {
+    width: 26px;
+  }
+  
+  .email {
+    width: 32px;
+  }
+  
+  }
