@@ -1,5 +1,5 @@
-# Link Tree Clone
-This linktree clone shares many links at once and has a beautiful design that’s eye-catching. The style aids in polishing the brand and can make users more willing to visit links!
+# Linktree Clone
+This Linktree clone shares many links at once and has a beautiful design that’s eye-catching. The style aids in polishing the brand and can make users more willing to visit links!
 
 
 
@@ -45,7 +45,7 @@ Project is created with:
 
 -  Displays many links at once
 
--  A background image that correspons with the profile image
+-  A background image that corresponds with the profile image
 
 -  Aesthetic design
 
@@ -59,11 +59,11 @@ Project is created with:
 
 -  Making the username a color gradient while also making it readable
 
--  Choosing the opacity of the boxes for the links so that the words in the box can be readable.
+-  Choosing the opacity of the boxes for the links so that the words in the box can be readable
 
 
 
 
 ## Inspiration
 
-I saw a design of a linktree account (https://suevu.com/wp-content/uploads/2019/10/Linktree.jpg) and I loved it so much that I couldn’t resist building a linktree clone!
+I saw a design of a Linktree design (https://suevu.com/wp-content/uploads/2019/10/Linktree.jpg) and I loved it so much that I couldn’t resist building a Linktree clone!
